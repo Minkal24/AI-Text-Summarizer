@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <main class="container">
+
+        <!-- Hero Section -->
+
+        <section class="hero">
+
+            <div class="hero-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+
+            <h1>AI Text Summarizer</h1>
+
+            <p>Convert lengthy articles, blogs, documents and conversations
+                into concise summaries powered by Hugging Face Transformers.</p>
+
+        </section>
+
+        <!-- Input Card -->
+        <section class="card">
+
+            <div class="card-title">
+              <h2>
+                <i class="fa-regular fa-pen-to-square"></i>
+                Enter Your Text
+              </h2>
+            </div>
+
+            <form id="summarization-form">
+                <textarea
+                    id="dialogue-input"
+                    placeholder="Paste your article, blog, email, report or paragraph here..."
+                    required></textarea>
+
+                <button type="submit"><i class="fa-solid fa-bolt"></i> Generate Summary</button>
+
+            </form>
+        </section>
+
+        <!-- Output Card -->
+
+        <section class="card">
+
+            <div class="card-title">
+                <h2><i class="fa-regular fa-file-lines"></i> Generated Summary</h2>
+            </div>
+
+            <div id="summary-output">
+                <p id="summary-text">
+                    Your AI-generated summary will appear here after clicking
+                    <strong>Generate Summary</strong>.
+                </p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p> Developed using ❤️ FastAPI • Hugging Face Transformers • Python</p>
+        </footer>
+
+    </main>
+    <script src="/static/script.js"></script>
+    </body>
+</html>
